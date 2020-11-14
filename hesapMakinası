@@ -1,0 +1,54 @@
+#include <iostream>
+using namespace std;
+int main (){
+	int sayi1,sayi2;
+	cout << "1.İşlem = Toplama"<<endl;
+	cout << "2.İşlem = Çıkarma"<<endl;
+	cout << "3.İşlem = Çarpma"<<endl;
+	cout << "4.İşlem = Bölme"<<endl;
+	int islem;
+	cout << "İşlem numarası giriniz:";
+	cin >> islem;
+
+
+
+	if(islem==1){
+		cout<<"1.Sayıyı giriniz:";
+		cin>>sayi1;
+		cout<<"2.Sayıyı giriniz:";
+		cin>>sayi2;
+		cout<<"Sonuç:"<<sayi1+sayi2<<endl;
+
+	}
+	else if(islem==2){
+		cout<<"1.Sayıyı giriniz:";
+		cin>>sayi1;
+		cout<<"2.Sayıyı giriniz:";
+		cin>>sayi2;
+		cout<<"Sonuç:"<<sayi1-sayi2<<endl;
+
+	}
+
+	else if(islem==3){
+		cout<<"1.Sayıyı giriniz:";
+		cin>>sayi1;
+		cout<<"2.Sayıyı giriniz:";
+		cin>>sayi2;
+		cout<<"Sonuç:"<<sayi1*sayi2<<endl;
+
+	}
+	else if(islem==4){
+		cout<<"1.Sayıyı giriniz:";
+		cin>>sayi1;
+		cout<<"2.Sayıyı giriniz:";
+		cin>>sayi2;
+		cout<<"Sonuç:"<<sayi1/sayi2<<endl;
+
+	}
+	else{
+		cout<<"Geçersiz İşlem"<<endl;
+	}
+
+
+	return 0;
+}
