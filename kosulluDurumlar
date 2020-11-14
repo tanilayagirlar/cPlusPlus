@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+	string id="lorem";
+	string password="1234";
+
+	string usrId;
+	string usrPass;
+
+	cout << "Id giriniz:";
+	cin >> usrId;
+	cout << "Password giriniz:";
+	cin >> usrPass;
+
+
+	if(usrId == id && usrPass == password){
+		cout << "Giriş Başarılı";
+	}
+	else if(usrId == id && usrPass != password){
+		cout << "Password yanlış.";
+	}
+	else if(usrId != id && usrPass == password){
+			cout << "Id yanlış.";
+		}
+	else{
+		cout << "Id ve Password yanlış.";
+	}
+
+	return 0;
+}
